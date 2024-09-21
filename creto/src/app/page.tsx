@@ -32,7 +32,7 @@ export default function Component() {
                   id="usuario"
                   name="usuario"
                   type="text"
-                  className="mt-1 block w-full rounded-lg bg-zinc-900 border-zinc-700 text-white placeholder-gray-500 focus:border-white focus:ring-white"
+                  className="h-10 border px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 block w-full rounded-lg bg-zinc-900 border-zinc-700 text-white placeholder-gray-500 focus:border-white focus:ring-white"
                   placeholder="Enter your username"
                 />
               </div>
@@ -44,13 +44,13 @@ export default function Component() {
                   id="contrasena"
                   name="contrasena"
                   type="password"
-                  className="mt-1 block w-full rounded-lg bg-zinc-900 border-zinc-700 text-white placeholder-gray-500 focus:border-white focus:ring-white"
+                  className="h-10 border px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 mt-1 block w-full rounded-lg bg-zinc-900 border-zinc-700 text-white placeholder-gray-500 focus:border-white focus:ring-white"
                   placeholder="Enter your password"
                 />
               </div>
             </div>
             <div className="space-y-4">
-              <Button type="submit" className="w-full bg-white text-black hover:bg-gray-200 focus:ring-2 focus:ring-gray-400 rounded-lg">
+              <Button type="submit" className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-white text-black hover:bg-gray-200 focus:ring-2 focus:ring-gray-400 rounded-lg">
                 Sign Up
               </Button>
               <div className="text-center">
