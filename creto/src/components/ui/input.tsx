@@ -1,11 +1,11 @@
-export default function Input({  placeholder, id, name, type, className }) {
+export default function Input({  placeholder, id, name, type, value, onChange, className }) {
   return (
     <input
       id={id}
       name={name}
       type={type}
-      //value={value}
-      //onChange={onChange}
+      value={value}
+      onChange={onChange}
       placeholder={placeholder}
       className={className}
     />
