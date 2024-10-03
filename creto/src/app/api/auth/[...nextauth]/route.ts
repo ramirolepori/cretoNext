@@ -14,7 +14,7 @@ const handler = NextAuth({
                 email: {},
                 password: {}
             },
-            async authorize(credentials, req) {
+            async authorize(credentials) {
                 //
                 if (!credentials?.email || !credentials?.password) {
                     throw new Error("Email y contraseña son requeridos");
