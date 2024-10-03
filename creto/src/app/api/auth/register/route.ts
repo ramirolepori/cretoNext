@@ -17,7 +17,7 @@ export async function POST(request:Request)  {
         VALUES (${name},${email}) RETURNING id;`
         console.log({responseUser: responseUser.rows[0].id});
 
-        const responsePass = await sql`
+        await sql`
         INSERT INTO logins (cliente_id, password_hash) 
         VALUES (${responseUser.rows[0].id},${hashedPassword});`
 
