@@ -13,7 +13,7 @@ export default function Form() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
-  const [isPending, startTransition] = useTransition();
+  const [isPending] = useTransition();
   const router = useRouter();
 
   const handleLoginSubmit = async (e: FormEvent<HTMLFormElement>) => {
