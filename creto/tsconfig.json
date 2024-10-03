@@ -27,14 +27,16 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "hashPassword.js"  ],
+    ".next/types/**/*.ts",
+    "hashPassword.js"
+  ],
   "exclude": [
     "node_modules"
   ]
