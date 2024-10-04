@@ -36,7 +36,8 @@ export default function Form() {
       setError(res.error); // Muestra el error si ocurre
     } else {
       // Si no hay errores, redirecciona
-      router.push("/dashboard");
+      router.push("/");
+      router.refresh();
     }
   };
 
