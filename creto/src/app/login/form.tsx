@@ -90,7 +90,7 @@ export default function Form() {
               Start your journey with us today
             </p>
           </div>
-          <form className="space-y-4">
+          <form onSubmit={handleLoginSubmit} className="space-y-4">
             <div className="space-y-3">
               <div>
                 <Label htmlFor="usuario" className="text-sm font-medium text-gray-300">
