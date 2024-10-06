@@ -9,13 +9,11 @@ export async function POST(request:Request)  {
 
 
         const hashedPassword = await hash(password, 10);
-        console.log({name, email, password, hashedPassword});
 
 
         const responseUser = await sql`
         INSERT INTO clientes (nombre,email) 
         VALUES (${name},${email}) RETURNING id;`
-        console.log({responseUser: responseUser.rows[0].id});
 
         await sql`
         INSERT INTO logins (cliente_id, password_hash) 
