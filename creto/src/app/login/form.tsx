@@ -53,7 +53,7 @@ export default function Form() {
       setError(res.error); // Muestra el error si ocurre
     } else {
       // Si no hay errores, redirecciona
-      router.push("/");
+      router.push("/dashboard");
       router.refresh();
     }
   };
@@ -67,7 +67,7 @@ export default function Form() {
           alt="Abstract network visualization"
           className="w-full h-full object-cover filter blur"
         />
-        <div className="absolute inset-0 bg-black opacity-80" /> {/* Reduced opacity from 60 to 40 */}
+        <div className="absolute inset-0 bg-black opacity-75" /> {/* Reduced opacity from 60 to 40 */}
       </div>
 
       {/* GIF for desktop */}

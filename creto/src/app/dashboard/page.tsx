@@ -1,5 +1,7 @@
-export default function DashboardPage() {
-  return (
-    <div>private dashboard page - you need to be logged in to view this</div>
-  )
+import { getServerSession } from "next-auth";
+import Form from "./form";
+
+export default async function DashboardPage() {
+    const session = await getServerSession();
+    return <Form session={session}/>;
 }
