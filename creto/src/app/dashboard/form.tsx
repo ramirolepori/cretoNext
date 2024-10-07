@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { signOut } from "next-auth/react";
+import { Session } from 'next-auth';
 
 
 const texts = [
@@ -12,7 +13,7 @@ const texts = [
 ]
 
 interface ComingSoonProps {
-    session: any; // Si tienes tipos específicos, puedes reemplazar 'any' con el tipo de sesión adecuado
+    session: Session | null; // Si tienes tipos específicos, puedes reemplazar 'any' con el tipo de sesión adecuado
   }
 
 export default function ComingSoon({ session }: ComingSoonProps) {
